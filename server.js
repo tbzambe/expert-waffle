@@ -1,6 +1,5 @@
 import express from 'express';
-
-const app = express();
+export const app = express();
 const PORT = 3000;
 app.use(express.json());
 
@@ -73,6 +72,6 @@ app.get('*', (_, res) => {
 /**
  * Inicia o servidor.
  */
-app.listen(PORT, () => {
+export const server = app.listen(PORT, () => {
     console.log('Servidores escutando...');
 })
