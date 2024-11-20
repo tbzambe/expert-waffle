@@ -7,7 +7,7 @@ Este projeto é parte do acompanhamento do curso [Imersão Back-End](https://www
 - [Instalação](#instalação)
 - [Utilização](#utilização)
 - [Contribuição](#contribuição)
-- [Licença](#Licença)
+- [Licença](#licença)
 
 ## Instalação
 
@@ -19,21 +19,17 @@ Com essas ferramentas instaladas, você pode seguir os passos abaixo para prepar
 
 ### Passos:
 
-1. Clone o repositório para o seu ambiente local:
+1. Clone o repositório para o seu ambiente local. Este comando irá baixar o repositório do projeto para o seu computador:
 ```bash
 git clone git@github.com:tbzambe/expert-waffle.git
 ```
 
-Este comando irá baixar o repositório do projeto para o seu computador.
-
-2. Instale as dependências do projeto:
+2. Instale as dependências do projeto. Isso instalará todos os pacotes que o projeto precisa para rodar corretamente:
 
 ```bash
 cd expert-waffle
 npm i
 ```
-
-Isso instalará todos os pacotes que o projeto precisa para rodar corretamente.
 
 ## Utilização
 
@@ -54,6 +50,7 @@ Atualmente, o projeto conta com as funcionalidades básicas implementadas até a
 <details>
  <summary><code>GET</code> <code><b>/posts</b></code> <code>Recupera uma lista de objetos com fotos</code></summary>
 
+> ### Descrição
 > Esse endpoint retorna uma lista de objetos, cada um representando uma foto, com informações relacionadas (como descrição e URL).
 > ### Parâmetros
 > | nome | tipo | tipo de dado | descrição |
@@ -73,6 +70,7 @@ Atualmente, o projeto conta com as funcionalidades básicas implementadas até a
 <details>
  <summary><code>GET</code> <code><b>/posts/{id}</b></code> <code>Recupera um objeto com foto por ID</code></summary>
 
+> ### Descrição
 > Através desse endpoint, você pode recuperar informações de um único objeto de foto, utilizando o ID específico para consulta.
 > ### Parâmetros
 > | nome | tipo | tipo de dado | descrição                   |
@@ -107,7 +105,7 @@ git push origin feature/nome-da-feature
 ```
 5. Abra um pull request para a branch principal (master) do repositório original.
 
-Agradeço sua contribuição para a melhoria deste projeto!
+Agradeço sua contribuição para a melhoria deste projeto e meu aprendizado!
 
 ## Licença
 
