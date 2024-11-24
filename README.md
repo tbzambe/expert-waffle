@@ -12,7 +12,7 @@ Este projeto é parte do acompanhamento do curso [Imersão Back-End](https://www
 ## Instalação
 
 Antes de começar, é necessário garantir que o Node.js e o npm (Node Package Manager) estejam instalados em seu sistema. Caso não tenha o Node.js instalado, você pode seguir os links abaixo para obter as versões mais recentes e a documentação oficial:
-- [Instalação do Node.js](https://nodejs.org)
+- [Instalação do Node.js](https://nodejs.org) - LTS/JOD
 - [Instalação do npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 Com essas ferramentas instaladas, você pode seguir os passos abaixo para preparar o ambiente do projeto.
@@ -31,9 +31,16 @@ cd expert-waffle
 npm i
 ```
 
+3. Crie um arquivo `.env` na raiz do projeto para conter as variáveis do ambiente. As variáveis necessárias para o funcionamento são as seguintes, apenas lembre-se de alterar seus valores:
+
+```bash
+MONGODB_CONEXAO=mongodb://username:password@localhost:27017
+PORT=3000
+```
+
 ## Utilização
 
-Uma vez com o ambiente configurado, você pode rodar a aplicação de forma simples e rápida. O servidor por padrão está configurado para rodar na porta `3000`.
+Uma vez com o ambiente configurado, você pode rodar a aplicação de forma simples e rápida.
 
 ### Executando o projeto
 
