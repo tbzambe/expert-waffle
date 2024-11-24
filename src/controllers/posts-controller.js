@@ -1,6 +1,6 @@
 import {getTodosPosts, criarPost, atualizarPost} from "../models/postsModel.js";
 import fs from "fs";
-import gerarDescricaoComGemini from "../services/geminiService.js"
+import gerarDescricaoComGemini from "../services/gemini-service.js"
 
 export async function listarPosts(req, res) {
     // Chama a função para buscar os posts

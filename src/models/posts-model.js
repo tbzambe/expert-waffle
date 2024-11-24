@@ -1,12 +1,19 @@
 import 'dotenv/config';
 import { ObjectId } from 'mongodb';
-import conectarAoBanco from '../config/db-config.js'
+import conectarAoBanco from '../configs/db-config.js'
 
 const conexao = await conectarAoBanco(process.env.MONGODB_CONEXAO);
 
-const db = conexao.db(process.env.DB_NOME || 'imersao-instabytes');
-const colecao = db.collection(process.env.COLECAO_POSTS_NOME || 'posts');
+const db = conexao.db(process.env.DB_NOME);
+const colecao = db.collection(process.env.COLECAO_POSTS_NOME);
 
+/**
+ * Converte uma string de ID em um objeto ObjectId.
+ *
+ * @param {string} id - O ID em formato de string hexadecimal a ser convertido.
+ * @throws {Error} Se o ID fornecido não for válido.
+ * @returns {ObjectId} O ID convertido em um ObjectId.
+ */
 const toObjectId = (id) => {
     if (!ObjectId.isValid(id)) {
         throw new Error('Formato de ID inválido');
